@@ -1,9 +1,8 @@
-/* .big-banner {
-    background-image: url(../img/meadow.jpg);
-}  */
 
   .jumbotron {
-    margin: 0;
+    margin-top: 0;
+    border-style: solid;
+    
 }
 
 .wireless-home {
@@ -11,7 +10,10 @@
 }
 
 h1 {
-    font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  background: -webkit-linear-gradient(silver, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
