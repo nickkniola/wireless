@@ -1,19 +1,46 @@
 
   .jumbotron {
-    margin-top: 0;
-    border-style: solid;
-    
+    /* background-color: #F36C22; */
+    background: rgb(243,126,8);
+background: linear-gradient(90deg, rgba(243,126,8,1) 0%, rgb(225, 84, 8) 47%, rgba(193,52,33,1) 100%);
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
 .wireless-home {
-  max-width: 900px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-h1 {
+
+#welcome-title {
   font-family: Helvetica, sans-serif;
-  background: -webkit-linear-gradient(silver, #333);
+  background: -webkit-linear-gradient(silver, white ); 
+  /* #333 */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+
+#wireless-title {
+  font-family: Helvetica, sans-serif;
+  background: -webkit-linear-gradient(silver, white ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: Helvetica, sans-serif;
+  background: -webkit-linear-gradient(#f37e08, #c13421);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+#home-description {
+  color: white;
+  max-width: 50rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 body {
@@ -34,21 +61,39 @@ body {
   margin-right:1rem; 
 }
 
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
 
+.list-inline-item a {
+  color: black;
+}
+
+.list-inline-item a:hover {
+  color: orangered;
+
+}
+
+.wireless-bar {
+  background-color: rgb(199, 199, 199);
+}
 
  @media (min-width: 0px) {  
     h1 {font-size:1.6rem;}
     #wireless-title {font-size:2.25rem;}
+    #secondary-titles {font-size:2.25rem; margin-bottom:1rem;}
   }
 @media (min-width: 576px) {  
     h1 {font-size:2rem;} 
-    #wireless-title {font-size:3rem;}
+    #wireless-title {font-size:5rem;}
+    #secondary-titles {font-size:3rem;}
   }
   
   
   @media (min-width: 768px) {  
     h1 {font-size:3rem;} 
-    #wireless-title {font-size:5rem;}
+
 
   }
   
@@ -56,10 +101,12 @@ body {
   @media (min-width: 992px) { 
     h1 {font-size:4rem;} 
     #wireless-title {font-size:6rem;}
+    #secondary-titles {font-size:3.5rem;}
   }
   
  
   @media (min-width: 1200px) {  
     h1 {font-size:4rem;} 
     #wireless-title {font-size:6rem;}
+    #secondary-titles {font-size:4rem;}
   } 
