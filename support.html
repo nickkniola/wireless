@@ -47,63 +47,80 @@
    
         <div class="row">    
             <div class="col">
-                    <form class="form-align">
-                        <div class="form-row">
-                          <div class="col-md-6 mb-3">
-                            <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name"  required>
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-                          </div>
+                <form class="form-align">
+                    <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name"  required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" class="form-control" id="emailAddress" placeholder="Email" required>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                        <label for="deviceType">What device are you using?</label>
+                        <select class="form-control" id="deviceType">
+                            <option selected>Select...</option>
+                            <option>Galaxy</option>
+                            <option>Google Pixel</option>
+                            <option>iPad</option>
+                            <option>iPhone</option>
+                            <option>Microsoft Surface</option>
+                            <option>Samsung Galaxy</option>
+                        </select>
                         </div>
-                        <div class="form-row">
-                          <div class="col-md-12 mb-3">
-                            <label for="emailAddress">Email Address</label>
-                            <input type="email" class="form-control" id="emailAddress" placeholder="Email" required>
-                          </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                        <label for="issue">Type of Issue</label>
+                        <select class="form-control" id="issue">
+                            <option selected>Select...</option>
+                            <option>Activation</option>
+                            <option>Connectivity</option>
+                            <option>International</option>
+                            <option>Plans</option>
+                            <option>Payment</option>
+                            <option>Other Issue</option>
+                        </select>
                         </div>
-                        <div class="form-row">
-                            <div class="col-md-12 mb-3">
-                              <label for="deviceType">What device are you using?</label>
-                              <select class="form-control" id="deviceType">
-                                <option selected>Select...</option>
-                                <option>Galaxy</option>
-                                <option>Google Pixel</option>
-                                <option>iPad</option>
-                                <option>iPhone</option>
-                                <option>Microsoft Surface</option>
-                                <option>Samsung Galaxy</option>
-                              </select>
-                            </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                        <label for="issue">Description of Issue</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
                         </div>
-                        <div class="form-row">
-                            <div class="col-md-12 mb-3">
-                              <label for="issue">Type of Issue</label>
-                              <select class="form-control" id="issue">
-                                <option selected>Select...</option>
-                                <option>Activation</option>
-                                <option>Connectivity</option>
-                                <option>International</option>
-                                <option>Plans</option>
-                                <option>Payment</option>
-                                <option>Other Issue</option>
-                              </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-12 mb-3">
-                              <label for="issue">Description of Issue</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-info float-right mb-4" type="submit">Submit</button>
-                      </form>
+                    </div>
+                    <button id="submitButton" class="btn btn-outline-info float-right mb-4" type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
     
+    <div class="modal fade" id="thankModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Request Received</h5>
+            
+            </div>
+            <div class="modal-body">
+              <p>Thank you for contacting Wireless! Please check your email in the next 24 hours for a reply.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer class="px-md-3">
       <div class="wireless-bar d-flex flex-equal pl-md-3">
           <div class="col mr-md-4 pt-4 px-md-5 text-center overflow-hidden">
@@ -119,14 +136,16 @@
           </div>
       </div>
   </footer>
+  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
