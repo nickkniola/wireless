@@ -75,18 +75,7 @@ body {
 
 }
 
-/* .modal-full {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-.modal-cfull {
-height: auto;
-min-height: 100%;
-border-radius: 0;
-} */
 
 .wireless-bar {
   background-color: rgb(199, 199, 199);
@@ -106,7 +95,9 @@ border-radius: 0;
   
   @media (min-width: 768px) {  
     h1 {font-size:3rem;} 
-
+    .container-cards {
+      height: 500px;
+    }
 
   }
   
