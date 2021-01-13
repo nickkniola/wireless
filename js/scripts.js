@@ -9,16 +9,18 @@ function total(planCost) {
     return planTotal;
 }
 
-const homeText = "Home Welcome to Wireless The only plan which offers free roaming around the world, so you can go anywhere, do anything, without the hassle of roaming fees. Choose from one of our three affordable plans for the future! Get A Free Phone With a purchase of a new plan. Switch Plans And get your first year free!";
-const homePage = homeText.toLowerCase();
 
-const plansText = "Plans Find Your Plan Wireless is the only mobile provider to include free international roaming. You’ll also get unlimited texts and calls on all of our plans. Basic $29 / mo Free International Roaming 15GB LTE Hotspot per line Unlimited Texting, Calls SD Streaming Elite $39 / mo Free International Roaming 30GB LTE Hotspot per line Unlimited Texting, Calls HD Streaming Unlimited $49 / mo Free International Roaming 100GB LTE Hotspot per line Unlimited Texting, Calls Full HD Streaming";
-const plansPage = plansText.toLowerCase();
-
-const supportText = "Support Wireless Support First Name Last Name Email Address What device are you using? Type of Issue Description of Issue";
-const supportPage = supportText.toLowerCase();
 
 $(function(){
+    const homeText = "Home Welcome to Wireless The only plan which offers free roaming around the world, so you can go anywhere, do anything, without the hassle of roaming fees. Choose from one of our three affordable plans for the future! Get A Free Phone With a purchase of a new plan. Switch Plans And get your first year free!";
+    const homePage = homeText.toLowerCase();
+
+    const plansText = "Plans Find Your Plan Wireless is the only mobile provider to include free international roaming. You’ll also get unlimited texts and calls on all of our plans. Basic $29 / mo Free International Roaming 15GB LTE Hotspot per line Unlimited Texting, Calls SD Streaming Elite $39 / mo Free International Roaming 30GB LTE Hotspot per line Unlimited Texting, Calls HD Streaming Unlimited $49 / mo Free International Roaming 100GB LTE Hotspot per line Unlimited Texting, Calls Full HD Streaming";
+    const plansPage = plansText.toLowerCase();
+
+    const supportText = "Support Wireless Support First Name Last Name Email Address What device are you using? Type of Issue Description of Issue";
+    const supportPage = supportText.toLowerCase();
+
     $("#searchButton").on('click', function(){
         if (plansPage.includes(document.querySelector("#searchInput").value.toLowerCase())) {
             $("#searchButton").attr("href", "plans.html") 
